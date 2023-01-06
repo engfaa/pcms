@@ -8,12 +8,11 @@ import { motion } from 'framer-motion';
 import { FaHome, FaChartPie, FaDatabase } from "react-icons/fa";
 
 
-export default function Navbar({main,dashboard,datamanager}) {
+export default function Navbar({main,dashboard}) {
 
   const navigation = [
     { name: 'หน้าหลัก', href: '/', current: main ,icon: FaHome},
     { name: 'รายงานผู้บริหาร', href: 'dashboard', current: dashboard, icon:FaChartPie },
-    { name: 'จัดการข้อมูล', href: 'datamanager', current: datamanager, icon: FaDatabase },
   ]
   
   function classNames(...classes) {
