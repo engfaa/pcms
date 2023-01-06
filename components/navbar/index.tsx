@@ -12,7 +12,10 @@ export default function Navbar({main,dashboard}) {
 
   const navigation = [
     { name: 'หน้าหลัก', href: '/', current: main ,icon: FaHome},
-    { name: 'รายงานผู้บริหาร', href: 'dashboard', current: dashboard, icon:FaChartPie },
+
+    { name: 'ข้อมูลสถานีไฟฟ้า', href: 'dashboard', current: dashboard, icon:FaChartPie },
+    { name: 'ค่ากระแสลัดวงจร', href: 'datamanager', current: datamanager, icon: FaDatabase },
+
   ]
   
   function classNames(...classes) {
