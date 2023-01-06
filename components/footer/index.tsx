@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
  
-<footer className="hidden md:block text-center bg-violet-700 text-white">
+<footer className="hidden md:block text-center bg-emerald-700 text-white">
   <div className="justify-end pt-4 mb-2">
 
   <Link href="https://www.facebook.com/Provincial.Electricity.Authority">
