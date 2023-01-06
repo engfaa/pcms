@@ -38,8 +38,8 @@ export default function Navbar({main,dashboard}) {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'flex items-center bg-violet-700 text-white'
-                            : 'flex items-center bg-violet-400 text-white hover:bg-violet-700 hover:text-white',
+                            ? 'flex items-center bg-blue-700 text-white'
+                            : 'flex items-center bg-blue-400 text-white hover:bg-violet-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
