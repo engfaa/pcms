@@ -8,12 +8,14 @@ import { motion } from 'framer-motion';
 import { FaHome, FaChartPie, FaDatabase } from "react-icons/fa";
 
 
-export default function Navbar({main,dashboard,datamanager}) {
+export default function Navbar({main,dashboard}) {
 
   const navigation = [
     { name: 'หน้าหลัก', href: '/', current: main ,icon: FaHome},
+
     { name: 'ข้อมูลสถานีไฟฟ้า', href: 'dashboard', current: dashboard, icon:FaChartPie },
     { name: 'ค่ากระแสลัดวงจร', href: 'datamanager', current: datamanager, icon: FaDatabase },
+
   ]
   
   function classNames(...classes) {
@@ -39,8 +41,8 @@ export default function Navbar({main,dashboard,datamanager}) {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'flex items-center bg-violet-700 text-white'
-                            : 'flex items-center bg-violet-400 text-white hover:bg-violet-700 hover:text-white',
+                            ? 'flex items-center bg-blue-700 text-white'
+                            : 'flex items-center bg-blue-400 text-white hover:bg-violet-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
